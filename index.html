@@ -23,48 +23,50 @@
       width: 80%;
       max-width: 300px;
       text-decoration: none;
-      color: white;
       font-size: 18px;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
     }
     .link:hover {
       opacity: 0.8;
     }
+
     /* 旧Twitterの色 */
     .twitter {
       background-color: #000000;
+      color: white;
     }
+
     /* BlueSkyの色 */
     .bluesky {
       background-color: #0A74DA;
+      color: white;
     }
+
     /* Instagramの色（グラデーション） */
     .instagram {
       background: linear-gradient(45deg, #E1306C, #FDCB82);
-  
-　　　　.bukulog {
-  background-color: #ffffff; /* 白背景 */
-  color: #000000; /* 黒文字 */
-  border: 2px solid #000000; /* 黒い枠線 */
-  border-radius: 5px; /* 角を丸くする */
-  padding: 10px 20px; /* パディングでボタンのサイズ調整 */
-  text-align: center; /* テキストを中央揃え */
-  text-decoration: none; /* リンクの下線を削除 */
-  font-size: 16px; /* テキストサイズ */
-  display: inline-block; /* インラインブロックでボタンにする */
-  transition: background-color 0.3s, color 0.3s; /* ホバー時のアニメーション */
-}
-
-.bukulog:hover {
-  background-color: #000000; /* 黒背景 */
-  color: #ffffff; /* 白文字 */
-}
-
+      color: white;
     }
+
+    /* はてなブログの色 */
+    .hatenablog {
+      background-color: #ffffff; /* 白背景 */
+      color: #000000; /* 黒文字 */
+      border: 2px solid #000000; /* 黒い枠線 */
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .hatenablog:hover {
+      background-color: #000000; /* 黒背景 */
+      color: #ffffff; /* 白文字 */
+    }
+
     /* ブクログの色 */
     .booklog {
       background-color: #66c2ff;
+      color: white;
     }
   </style>
 </head>
@@ -73,7 +75,7 @@
   <a class="link twitter" href="https://x.com/zopypam" target="_blank">旧Twitter</a>
   <a class="link bluesky" href="https://bsky.app/profile/zopypam.bsky.social" target="_blank">BlueSky</a>
   <a class="link instagram" href="https://www.instagram.com/zopypam/" target="_blank">Instagram</a>
-  <a class="link hatenablog" href="https://booklog.jp/users/natas/" target="_blank">Hatena Blog</a>
+  <a class="link hatenablog" href="https://example.hatenablog.com" target="_blank">はてなブログ</a>
   <a class="link booklog" href="https://booklog.jp/users/natas/" target="_blank">ブクログ</a>
 </body>
 </html>
